@@ -1,3 +1,15 @@
+<div align="center">
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/LaurieWired/InfiniteRadio)](https://github.com/LaurieWired/InfiniteRadio/releases)
+[![GitHub stars](https://img.shields.io/github/stars/LaurieWired/InfiniteRadio)](https://github.com/LaurieWired/InfiniteRadio/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/LaurieWired/InfiniteRadio)](https://github.com/LaurieWired/InfiniteRadio/network/members)
+[![GitHub contributors](https://img.shields.io/github/contributors/LaurieWired/InfiniteRadio)](https://github.com/LaurieWired/InfiniteRadio/graphs/contributors)
+[![Follow @lauriewired](https://img.shields.io/twitter/follow/lauriewired?style=social)](https://twitter.com/lauriewired)
+
+![logo](images/infinite_radio.png)
+
+</div>
 
 # Infinite Radio
 
@@ -94,6 +106,21 @@ curl -X POST http://localhost:8080/genre \
 ```bash
 curl http://localhost:8080/current-genre
 ```
+
+# Building the Windows Executable
+
+For convenience, you can package the Windows UI controller into a single `.exe` file. This removes the need to install Python or dependencies on the end-user's machine.
+
+1.  Navigate to the project's root directory.
+2.  Install PyInstaller:
+    ```sh
+    pip install pyinstaller
+    ```
+3.  Run the PyInstaller command:
+    ```sh
+    pyinstaller --onefile --windowed --add-data "icon.png:." windows_app.py
+    ```
+4.  The final executable will be located in the `dist/` directory (`dist/windows_app.exe`). You can move this file anywhere.
 
 # Acknowledgements
 
