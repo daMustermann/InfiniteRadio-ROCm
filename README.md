@@ -71,7 +71,7 @@ If you choose the LLM DJ, you must also run a local LLM server that the DJ can c
 
 1.  Download a vision model like [InternVL3](https://huggingface.co/OpenGVLab/InternVL3-2B) in [LM Studio](https://lmstudio.ai).
 2.  Start the server in LM Studio.
-3.  The `llm_dj.py` script is hardcoded to connect to `http://localhost:1234/v1`, which is the default for LM Studio.
+3.  The `llm_dj.py` script is hardcoded to connect to `http://localhost:1234/v1`, which is the default for LM Studio. If you need to change the url/port, change line 135 in         `llm_dj.py`  (`lm_studio_url = "http://localhost:1234/v1"`) to your desired url.
 
 # API Reference
 
