@@ -2,6 +2,14 @@
   <img src="images/infinite_radio.png" alt="Infinite Radio Logo"/>
 </div>
 
+> **Note**
+>
+> A huge thank you to the original author, **LaurieWired**, for creating the amazing Infinite Radio project. This repository is a fork that adapts the original vision to run on different hardware and operating systems.
+>
+> The primary changes in this fork are:
+> - **AMD GPU Support:** The core music generation model now runs with AMD's ROCm technology instead of NVIDIA's CUDA.
+> - **Windows Compatibility:** The user interface is a native Windows application instead of a macOS application.
+
 # Infinite Radio
 
 Infinite Radio generates endless music that automatically changes based on your current context. It combines the [Magenta RealTime](https://magenta.withgoogle.com/magenta-realtime) music model with contextual genre selection, either from a vision-capable Large Language Model or from the top processes running on your machine.
